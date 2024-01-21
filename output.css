@@ -558,8 +558,8 @@ video {
 .button {
   font-size: 1em;
   padding: 10px;
-  color: #fff;
-  border: 2px solid blue;
+  color: black;
+  border: 2px solid #fff;
   border-radius: 20px/50px;
   text-decoration: none;
   cursor: pointer;
@@ -567,7 +567,8 @@ video {
 }
 
 .button:hover {
-  background: blue;
+  background: black;
+  color: #fff;
 }
 
 .overlay {

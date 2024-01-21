@@ -1,10 +1,9 @@
 function animateOut(){
-    var element = document.getElementById('popupButton');
+    var element = document.getElementById('popupBox');
     element.classList.add('scale-out-center');
 }
 
 function animateIn(){
-    var button = document.getElementById('popupButton');
-    var modal = document.getElementById('popupButton');
+    var element = document.getElementById('popupBox');
     button.classList.add('scale-out-center');
 }

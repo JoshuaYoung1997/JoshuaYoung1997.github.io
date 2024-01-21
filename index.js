@@ -30,12 +30,12 @@
 //       }, "1000");
 // }
 
-TweenLite.set(".SlideModalBottom", { autoAlpha: 0, y: 50 });
+TweenLite.set(".slideModalBottom", { autoAlpha: 0, y: 50 });
 TweenLite.set(".modalOverlay", { autoAlpha: 0 });
 
-var quickLinksTradeBTN = document.getElementById("quickLinksTradeBTN");
+var mainButton = document.getElementById("mainButton");
 
-quickLinksTradeBTN.onclick = function() {
+mainButton.onclick = function() {
   
   var rect = this.getBoundingClientRect();
   TweenMax.set(".modalOverlay", {
@@ -55,25 +55,22 @@ quickLinksTradeBTN.onclick = function() {
     autoAlpha: 1
   });
 
-  tl.to(".SlideModalBottom", 0.5, {
+  tl.to(".slideModalBottom", 0.5, {
     autoAlpha: 1,
     y: 0,
     ease: Power1.easeInOut
   });
 
-  SlideModalBottomToggle = true;
-
-  var modelBottomLabel = document.getElementById("modelBottomLabel");
-  modelBottomLabel.innerHTML = "Modal Content Here";
+  slideModalBottomToggle = true;
 };
 
 modalOverlay1.onclick = function() {
-  if (SlideModalBottomToggle == true) {
+  if (slideModalBottomToggle == true) {
     TweenMax.to(".SlideNavLeft", 0.5, { x: 0, ease: Power1.easeInOut });
 
     TweenLite.to(".SlideNavRight", 0.5, { x: 0, ease: Power1.easeInOut });
 
-    TweenLite.to(".SlideModalBottom", 0.4, {
+    TweenLite.to(".slideModalBottom", 0.4, {
       autoAlpha: 0,
       y: 50,
       ease: Power1.easeInOut

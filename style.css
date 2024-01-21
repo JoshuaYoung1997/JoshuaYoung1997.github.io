@@ -16,7 +16,7 @@
     cursor: pointer;
   }
   
-  .summaryQuickLinksBTNS {
+  .buttonLinks {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -25,18 +25,17 @@
     z-index: 1;
   }
   
-  .summaryQuickLinksBTNSContainer {
+  .buttonContainer {
     display: flex;
-    justify-content: flex-end;
     width: 90%;
   }
   
-  #quickLinksBTN {
+  #buttonLinks {
     width: 135px;
     margin-left: 10px;
   }
   
-  #quickLinksTradeBTN {
+  #mainButton {
     top: 100px;
     width: 115px;
   }
@@ -68,14 +67,14 @@
     color: #fff;
   }
   
-  .SlideModalBottomContainer {
+  .slideModalBottomContainer {
     display: flex;
     justify-content: center;
     height: 100%;
     width: 100%;
   }
   
-  .SlideModalBottom {
+  .slideModalBottom {
     width: 800px;
     height: 400px;
     background-color: #ffffff;
@@ -84,7 +83,7 @@
     z-index: 12;
   }
   
-  #modelBottomLabel {
+  #modalBottomContent {
     display: flex;
     justify-content: center;
     font-weight: 700;

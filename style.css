@@ -1,142 +1,96 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@-webkit-keyframes scale-out-center {
-    0% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      opacity: 1;
-    }
-  }
-  @keyframes scale-out-center {
-    0% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      opacity: 1;
-    }
-  }
 
-  @-webkit-keyframes scale-in-center {
-    0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      opacity: 1;
-    }
-  }
-  @keyframes scale-in-center {
-    0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      opacity: 1;
-    }
-  }
 
-.box {
-    width: 20%;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 35px;
-    border: 2px solid #fff;
-    border-radius: 20px/50px;
-    background-clip: padding-box;
+.modalOverlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
     text-align: center;
-  }
-  
-  .button {
-    font-size: 1em;
-    padding: 10px;
-    color: black;
-    border: 2px solid #fff;
-    border-radius: 100%;
-    text-decoration: none;
+    z-index: 11;
     cursor: pointer;
-    transition: all 0.3s ease-out;
   }
   
-  .button:hover {
+  .summaryQuickLinksBTNS {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .summaryQuickLinksBTNSContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+  }
+  
+  #quickLinksBTN {
+    width: 135px;
+    margin-left: 10px;
+  }
+  
+  #quickLinksTradeBTN {
+    top: 100px;
+    width: 115px;
+  }
+  
+  .btnOutline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 26;
+    -moz-border-radius: 26;
+    border-radius: 26px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 10px 20px 10px 20px;
+    background: #f9e038;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .btnOutline:hover {
     background: black;
+    text-decoration: none;
     color: #fff;
   }
   
-  .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
+  .SlideModalBottomContainer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
   }
   
-  .overlay:target {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  .popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-    transition: all 5s ease-in-out;
-  }
-  
-  .popup h2 {
-    margin-top: 0;
-    color: #333;
-    font-family: Tahoma, Arial, sans-serif;
-  }
-  
-  .popup .close {
+  .SlideModalBottom {
+    width: 800px;
+    height: 400px;
+    background-color: #ffffff;
     position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
+    top: 25px;
+    z-index: 12;
   }
   
-  .popup .close:hover {
-    color: orange;
+  #modelBottomLabel {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: #000;
+    position: relative;
+    top: 40%;
   }
-  
-  .popup .content {
-    max-height: 30%;
-    overflow: auto;
-  }
-
-  .scale-out-center {
-	-webkit-animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
-
-.scale-in-center {
-	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}

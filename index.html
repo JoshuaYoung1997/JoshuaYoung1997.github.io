@@ -14,31 +14,27 @@
   <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 </head>
 
 <body>
   <main>
-    <div style="height: 1200px;">
-
-
-      <div class="box" id="popupBox">
-        <a class="button" href="#popup1" onclick="animateButtonOut()">&plus;</a>
-      </div>
-
-      <div id="popup1" class="overlay">
-        <div class="popup">
-          <h2>Explore</h2>
-          <a class="close" id="close" href="#" onclick="animateButtonIn()">×</a>
-          <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-          </div>
+    <div class="modalOverlay" id="modalOverlay1">
+      <div class="SlideModalBottomContainer">
+        <div class="SlideModalBottom">
+          <div id="modelBottomLabel">Modal</div>
         </div>
       </div>
-
+    </div>
+    
+    <div class="summaryQuickLinksBTNS">
+      <div class="summaryQuickLinksBTNSContainer">
+    
+        <div id="quickLinksTradeBTN" class="btnOutline">
+          Button
+        </div>
+      </div>
     </div>
   </main>
   <script src="index.js"></script>

@@ -25,10 +25,7 @@
       opacity: 1;
     }
   }
-  .scale-out-center {
-	-webkit-animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
+
 .box {
     width: 20%;
     margin: 0 auto;
@@ -108,3 +105,8 @@
     max-height: 30%;
     overflow: auto;
   }
+
+  .scale-out-center {
+	-webkit-animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}

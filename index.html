@@ -22,13 +22,13 @@
 
 
       <div class="box" id="popupBox">
-        <a class="button" href="#popup1" onclick="animateOut()">&plus;</a>
+        <a class="button" href="#popup1" onclick="animateButtonOut()">&plus;</a>
       </div>
 
       <div id="popup1" class="overlay">
         <div class="popup">
           <h2>Explore</h2>
-          <a class="close" href="#">×</a>
+          <a class="close" id="close" href="#" onclick="animateButtonIn()">×</a>
           <div class="content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex

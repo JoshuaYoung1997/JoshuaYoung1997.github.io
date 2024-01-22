@@ -648,3 +648,24 @@ video {
 #mainContent{
   justify-content: flex-start;
 }
+
+#backgroundContainer{
+  position: relative;
+}
+
+/* #containerA{ 
+      height: 100px;
+      width: 500px;
+      border: solid 1px gray; 
+  } */
+
+#mainContainer{
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  height: 100px;
+  width: 300px;
+  z-index: 1;
+  color: black;
+  border: solid 1px gray;
+}

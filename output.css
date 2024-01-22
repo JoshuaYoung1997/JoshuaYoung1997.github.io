@@ -635,14 +635,16 @@ video {
 }
 
 #colorBack{
-  height: 100%;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   background-color: maroon;
 }
 
 #imgBack{
   background-image: url('./images/Coding-Challenge-Image.png');
   background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #mainContent{
@@ -651,6 +653,8 @@ video {
 
 #backgroundContainer{
   position: relative;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* #containerA{ 

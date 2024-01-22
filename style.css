@@ -20,7 +20,8 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 50px;
+    bottom: 10px;
+    left: -50px;
     width: 100%;
     z-index: 1;
   }
@@ -34,25 +35,28 @@
     width: 135px;
     margin-left: 10px;
   }
-  
-  #mainButton {
-    top: 100px;
-    width: 115px;
+
+  #btnText{
+    font-family: Lato;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.625px;
+    text-align: center;
+    position: absolute;
+    left: 125px;
+    top: 5px;
   }
+
   
   .btnOutline {
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-border-radius: 26;
-    -moz-border-radius: 26;
-    border-radius: 26px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
     color: rgba(0, 0, 0, 0.75);
-    padding: 10px 20px 10px 20px;
-    background: #f9e038;
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
@@ -75,11 +79,14 @@
   }
   
   .slideModalBottom {
-    max-width: 80%;
+    max-width: 25%;
     max-height: 80%;
+    min-width: 350px;
+    min-height: 525px;
     background-color: #ffffff;
     position: absolute;
-    top: 25px;
+    bottom: 320px;
+    left: 118px;
     z-index: 12;
   }
   
@@ -95,29 +102,59 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 35px 30px;
+    text-align: left;
+  }
+
+  #modalBottomContent p {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.3499999940395355px;
+    text-align: left;
+  }
+
+  #modalBottomContent h3 {
+    font-family: Didot;
+    font-size: 66px;
+    font-weight: 700;
+    line-height: 85px;
+    letter-spacing: 0px;
+    text-align: left;
+
+  }
+
+  .exploreButton{
+    margin-top: 50px;
   }
 
   #colorBack{
-    max-width: 100%;
-    max-height: 100%;
+    height: 80em;
     background-color: maroon;
+    overflow: hidden;
   }
 
   #imgBack{
     background-image: url('./images/Coding-Challenge-Image.png');
     background-repeat:no-repeat;
-    background-size:contain;
-    height:200px;width:1200px;
+    background-size: cover;
+    height: 80em;
+    overflow: hidden;
   }
 
   #mainContent{
     justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
   }
 
   #backgroundContainer{
     position: relative;
-    max-width: 100%;
-    max-height: 100%;
+    height: auto;
+
   }
   /* #containerA{ 
       height: 100px;
@@ -126,11 +163,50 @@
   } */
   #mainContainer{
     position: absolute;
-    top: 50px;
+    bottom: 250px;
     left: 100px;
-    height: 100px;
-    width: 300px;
     z-index: 1;
-    color: black;
-    border: solid 1px gray;
+    color: white;
+  }
+
+  #mainContent h2{
+    font-family: Didot;
+    font-size: 224px;
+    font-weight: 700;
+    line-height: 289px;
+    letter-spacing: 0px;
+    text-align: left;
+
+  }
+
+  @media (max-width: 930px) {
+    #mainContent h2{
+      font-size: 150px;
+    }
+
+    .buttonLinks {
+      bottom: 25px;
+      left: -25px;
+  }
+
+  #btnText{
+    left: 85px;
+  }
+  
+  }
+
+  @media (max-width: 650px) {
+    #mainContent h2{
+      font-size: 100px;
+    }
+
+    .buttonLinks {
+      bottom: 50px;
+      left: -20px;
+  }
+
+    #btnText{
+      left: 85px;
+    }
+  
   }

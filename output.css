@@ -633,3 +633,18 @@ video {
   flex-wrap: wrap;
   padding: 35px 30px;
 }
+
+#colorBack{
+  height: 100%;
+  width: 100%;
+  background-color: maroon;
+}
+
+#imgBack{
+  background-image: url('./images/Coding-Challenge-Image.png');
+  background-size: cover;
+}
+
+#mainContent{
+  justify-content: flex-start;
+}
